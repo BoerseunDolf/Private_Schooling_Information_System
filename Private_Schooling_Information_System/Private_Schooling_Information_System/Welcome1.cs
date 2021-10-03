@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Private_Schooling_Information_System
 {
-    public partial class Form1 : Form
+    public partial class Welcome1 : Form
     {
-        public Form1()
+        public Welcome1()
         {
             InitializeComponent();
         }
