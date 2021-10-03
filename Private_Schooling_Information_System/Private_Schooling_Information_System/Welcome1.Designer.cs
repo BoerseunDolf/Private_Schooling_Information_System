@@ -52,6 +52,7 @@
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnSignUp
             // 
@@ -61,6 +62,7 @@
             this.btnSignUp.TabIndex = 2;
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnLearn
             // 
@@ -70,6 +72,7 @@
             this.btnLearn.TabIndex = 3;
             this.btnLearn.Text = "Learn More";
             this.btnLearn.UseVisualStyleBackColor = true;
+            this.btnLearn.Click += new System.EventHandler(this.btnLearn_Click);
             // 
             // Welcome1
             // 
