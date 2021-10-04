@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
-            this.Name = new System.Windows.Forms.Label();
+            this.Label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -99,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(93, 35);
+            this.label1.Location = new System.Drawing.Point(101, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 33);
             this.label1.TabIndex = 7;
@@ -122,15 +122,15 @@
             this.txtConfirmPassword.Size = new System.Drawing.Size(121, 20);
             this.txtConfirmPassword.TabIndex = 13;
             // 
-            // Name
+            // Label13
             // 
-            this.Name.AutoSize = true;
-            this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(33, 258);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(48, 16);
-            this.Name.TabIndex = 15;
-            this.Name.Text = "Name:";
+            this.Label13.AutoSize = true;
+            this.Label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label13.Location = new System.Drawing.Point(33, 258);
+            this.Label13.Name = "Label13";
+            this.Label13.Size = new System.Drawing.Size(48, 16);
+            this.Label13.TabIndex = 15;
+            this.Label13.Text = "Name:";
             // 
             // label5
             // 
@@ -271,7 +271,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.Label13);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.label3);
@@ -281,7 +281,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Sign_Up";
-            this.Text = "Sign_Up";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.Sign_Up_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,7 +298,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtConfirmPassword;
-        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label Label13;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
