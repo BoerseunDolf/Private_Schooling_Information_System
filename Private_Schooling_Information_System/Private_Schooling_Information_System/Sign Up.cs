@@ -16,5 +16,10 @@ namespace Private_Schooling_Information_System
         {
             InitializeComponent();
         }
+
+        private void Sign_Up_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
