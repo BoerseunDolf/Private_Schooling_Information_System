@@ -79,6 +79,7 @@
             this.btnLogin2.TabIndex = 5;
             this.btnLogin2.Text = "Login";
             this.btnLogin2.UseVisualStyleBackColor = true;
+            this.btnLogin2.Click += new System.EventHandler(this.btnLogin2_Click);
             // 
             // label3
             // 
@@ -103,6 +104,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
