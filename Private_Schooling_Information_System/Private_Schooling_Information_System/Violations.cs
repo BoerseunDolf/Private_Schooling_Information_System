@@ -12,7 +12,8 @@ using System.Data.SqlClient;
 namespace Private_Schooling_Information_System
 {
     public partial class Violations : Form
-    {// Public variables
+    {   
+        // Public variables
         string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\OneDrive\Documents\User_Info.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection conn;
         SqlCommand comm;

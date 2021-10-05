@@ -22,6 +22,7 @@ namespace Private_Schooling_Information_System
             //Open Manage Violations
             Manage_Violations frmManageViolation = new Manage_Violations();
             frmManageViolation.Show();
+            this.Close();
         }
 
         private void btnLogViolation_Click(object sender, EventArgs e)
@@ -29,6 +30,7 @@ namespace Private_Schooling_Information_System
             //Open Log Violations
             Log_Violations frmLogViolation = new Log_Violations();
             frmLogViolation.Show();
+            this.Close();
         }
 
         private void btnPullReport_Click(object sender, EventArgs e)
@@ -36,6 +38,7 @@ namespace Private_Schooling_Information_System
             //Open Report
             Report frmReport = new Report();
             frmReport.Show();
+            this.Close();
         }
     }
 }
