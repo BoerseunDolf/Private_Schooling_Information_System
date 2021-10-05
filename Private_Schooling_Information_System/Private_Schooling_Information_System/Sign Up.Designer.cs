@@ -67,7 +67,7 @@
             this.btnSignUp2.Location = new System.Drawing.Point(213, 515);
             this.btnSignUp2.Name = "btnSignUp2";
             this.btnSignUp2.Size = new System.Drawing.Size(75, 23);
-            this.btnSignUp2.TabIndex = 11;
+            this.btnSignUp2.TabIndex = 9;
             this.btnSignUp2.Text = "Sign Up";
             this.btnSignUp2.UseVisualStyleBackColor = true;
             this.btnSignUp2.Click += new System.EventHandler(this.btnSignUp2_Click);
@@ -78,14 +78,14 @@
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '*';
             this.txtPassword2.Size = new System.Drawing.Size(121, 20);
-            this.txtPassword2.TabIndex = 10;
+            this.txtPassword2.TabIndex = 2;
             // 
             // txtUserName2
             // 
             this.txtUserName2.Location = new System.Drawing.Point(167, 100);
             this.txtUserName2.Name = "txtUserName2";
             this.txtUserName2.Size = new System.Drawing.Size(121, 20);
-            this.txtUserName2.TabIndex = 9;
+            this.txtUserName2.TabIndex = 1;
             // 
             // label2
             // 
@@ -123,7 +123,7 @@
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
             this.txtConfirmPassword.Size = new System.Drawing.Size(121, 20);
-            this.txtConfirmPassword.TabIndex = 13;
+            this.txtConfirmPassword.TabIndex = 3;
             // 
             // Label13
             // 
@@ -170,21 +170,21 @@
             this.txtName.Location = new System.Drawing.Point(167, 257);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(121, 20);
-            this.txtName.TabIndex = 19;
+            this.txtName.TabIndex = 4;
             // 
             // txtSurname
             // 
             this.txtSurname.Location = new System.Drawing.Point(167, 290);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(121, 20);
-            this.txtSurname.TabIndex = 20;
+            this.txtSurname.TabIndex = 5;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(167, 323);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(121, 20);
-            this.txtEmail.TabIndex = 21;
+            this.txtEmail.TabIndex = 6;
             // 
             // cmbRole
             // 
@@ -197,7 +197,7 @@
             this.cmbRole.Location = new System.Drawing.Point(167, 354);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(121, 21);
-            this.cmbRole.TabIndex = 22;
+            this.cmbRole.TabIndex = 7;
             // 
             // label8
             // 
@@ -224,7 +224,7 @@
             this.txtUniqueNum.Location = new System.Drawing.Point(167, 461);
             this.txtUniqueNum.Name = "txtUniqueNum";
             this.txtUniqueNum.Size = new System.Drawing.Size(121, 20);
-            this.txtUniqueNum.TabIndex = 25;
+            this.txtUniqueNum.TabIndex = 8;
             // 
             // label10
             // 

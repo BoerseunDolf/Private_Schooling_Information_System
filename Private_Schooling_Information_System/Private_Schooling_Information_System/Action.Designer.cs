@@ -61,7 +61,7 @@
             this.btnAddViolation.Location = new System.Drawing.Point(309, 269);
             this.btnAddViolation.Name = "btnAddViolation";
             this.btnAddViolation.Size = new System.Drawing.Size(108, 56);
-            this.btnAddViolation.TabIndex = 2;
+            this.btnAddViolation.TabIndex = 3;
             this.btnAddViolation.Text = "Add Violations";
             this.btnAddViolation.UseVisualStyleBackColor = false;
             this.btnAddViolation.Click += new System.EventHandler(this.button2_Click);
@@ -72,7 +72,7 @@
             this.btnLogViolation.Location = new System.Drawing.Point(86, 269);
             this.btnLogViolation.Name = "btnLogViolation";
             this.btnLogViolation.Size = new System.Drawing.Size(108, 56);
-            this.btnLogViolation.TabIndex = 3;
+            this.btnLogViolation.TabIndex = 2;
             this.btnLogViolation.Text = "Log Violation";
             this.btnLogViolation.UseVisualStyleBackColor = false;
             this.btnLogViolation.Click += new System.EventHandler(this.btnLogViolation_Click);

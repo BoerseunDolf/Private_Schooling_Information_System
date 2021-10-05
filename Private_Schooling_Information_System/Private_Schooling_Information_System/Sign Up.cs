@@ -69,9 +69,8 @@ namespace Private_Schooling_Information_System
                 //Open conection to database
                 conn.Open();
 
-                string sql = "INSERT INTO [TableUserInfo](Id, User_Name, Password, Name, Surname, EmailAddress, Role, Unique_Number) VALUES(@id, @userName, @password, @name, @surname, @email, @role, @uni_num)";
+                string sql = "INSERT INTO [TableUserInfo](User_Name, Password, Name, Surname, EmailAddress, Role, Unique_Number) VALUES(@userName, @password, @name, @surname, @email, @role, @uni_num)";
                 comm = new SqlCommand(sql, conn);
-                comm.Parameters.AddWithValue("@id", Id);
                 comm.Parameters.AddWithValue("@userName", txtUserName2.Text);
                 comm.Parameters.AddWithValue("@password", txtPassword2.Text);
                 comm.Parameters.AddWithValue("@name", txtName.Text);
