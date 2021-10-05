@@ -103,6 +103,8 @@ namespace Private_Schooling_Information_System
             //Close connection
             conn.Close();
 
+            MessageBox.Show("Violation record successfully removed");
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)

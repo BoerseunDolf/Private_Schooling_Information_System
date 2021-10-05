@@ -97,7 +97,7 @@ namespace Private_Schooling_Information_System
             catch (SqlException error)
             {
                 MessageBox.Show(error.Message);
-            }
+            } 
 
             //Closing conection to database
             conn.Close();
@@ -135,6 +135,14 @@ namespace Private_Schooling_Information_System
 
             //Closing conection to database
             conn.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            //Open Log Violations
+            Action frmactions = new Action();
+            frmactions.Show();
+            this.Close();
         }
     }
 }

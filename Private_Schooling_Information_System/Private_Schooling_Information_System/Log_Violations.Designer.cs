@@ -36,13 +36,16 @@
             this.btnSaveViolation = new System.Windows.Forms.Button();
             this.cmbViolation = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(64, 34);
+            this.label1.Location = new System.Drawing.Point(38, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(425, 65);
             this.label1.TabIndex = 2;
@@ -87,7 +90,7 @@
             // 
             // btnSaveViolation
             // 
-            this.btnSaveViolation.Location = new System.Drawing.Point(49, 317);
+            this.btnSaveViolation.Location = new System.Drawing.Point(328, 446);
             this.btnSaveViolation.Name = "btnSaveViolation";
             this.btnSaveViolation.Size = new System.Drawing.Size(75, 23);
             this.btnSaveViolation.TabIndex = 17;
@@ -98,7 +101,7 @@
             // cmbViolation
             // 
             this.cmbViolation.FormattingEnabled = true;
-            this.cmbViolation.Location = new System.Drawing.Point(158, 204);
+            this.cmbViolation.Location = new System.Drawing.Point(158, 212);
             this.cmbViolation.Name = "cmbViolation";
             this.cmbViolation.Size = new System.Drawing.Size(245, 21);
             this.cmbViolation.TabIndex = 19;
@@ -107,17 +110,46 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(46, 205);
+            this.label4.Location = new System.Drawing.Point(46, 213);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.Size = new System.Drawing.Size(63, 16);
             this.label4.TabIndex = 18;
-            this.label4.Text = "Violation";
+            this.label4.Text = "Violation:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(46, 248);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 16);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Date:";
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(158, 248);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 21;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(32, 442);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(70, 31);
+            this.btnBack.TabIndex = 22;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Log_Violations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 633);
+            this.ClientSize = new System.Drawing.Size(507, 502);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbViolation);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSaveViolation);
@@ -144,5 +176,8 @@
         private System.Windows.Forms.Button btnSaveViolation;
         private System.Windows.Forms.ComboBox cmbViolation;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Button btnBack;
     }
 }
