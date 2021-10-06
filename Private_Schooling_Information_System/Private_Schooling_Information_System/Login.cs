@@ -61,10 +61,11 @@ namespace Private_Schooling_Information_System
 
         private void btnLogin2_Click(object sender, EventArgs e)
         {
+            /*//Open Log Violations
             Action frmactions = new Action();
             frmactions.Show();
-            this.Close();
-            /*try
+            this.Close();*/
+            try
             {
                 conn.Open();
                 adap = new SqlDataAdapter("SELECT Role FROM TableUserInfo WHERE User_Name = '" + txtUserName.Text + "'AND Password = '" + txtPassword.Text + "'", conn);
@@ -72,7 +73,7 @@ namespace Private_Schooling_Information_System
                 adap.Fill(dt);
                 if (dt.Rows.Count == 1)
                 {
-                    //Open Log Violations
+                    //Open Actions
                     Action frmactions = new Action();
                     frmactions.Show();
                     this.Close();
@@ -86,9 +87,9 @@ namespace Private_Schooling_Information_System
             catch (SqlException error)
             {
                 MessageBox.Show(error.Message);
-            }*/
+            }
 
-            
+
         }
     }
 }

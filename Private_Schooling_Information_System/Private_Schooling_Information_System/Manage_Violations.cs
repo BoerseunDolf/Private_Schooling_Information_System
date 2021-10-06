@@ -109,7 +109,7 @@ namespace Private_Schooling_Information_System
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            //Open Log Violations
+            //Back to action
             Action frmactions = new Action();
             frmactions.Show();
             this.Close();

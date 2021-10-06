@@ -22,6 +22,7 @@ namespace Private_Schooling_Information_System
             //Open Login Page
             Login frmLogin = new Login();
             frmLogin.Show();
+            this.Hide();
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -29,6 +30,7 @@ namespace Private_Schooling_Information_System
             //Open Sign Up Page
             Sign_Up frmSign_Up = new Sign_Up();
             frmSign_Up.Show();
+            this.Hide();
         }
 
         private void btnLearn_Click(object sender, EventArgs e)

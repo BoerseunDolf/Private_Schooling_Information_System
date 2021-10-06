@@ -109,30 +109,51 @@ namespace Private_Schooling_Information_System
             //Open conection to database
             conn.Open();
 
-            adap = new SqlDataAdapter();
-            ds = new DataSet();
-
-            sql = $"SELECT s.StudentNum, s.[Name], s.[Surname], vl.[DateOfViolation], v.[Description], v.[Penalty] FROM[ViolationLogTable] vl INNER JOIN[StudentTable] s ON vl.StudentNumber = s.StudentNum INNER JOIN[ViolationTable] v ON vl.ViolationType = v.Ref WHERE s.StudentNum = { cmbStudent.SelectedValue.ToString() } ";
-            comm = new SqlCommand(sql, conn);
-
-            //Filling the dataset
-            adap.SelectCommand = comm;
-            adap.Fill(ds, "Table");
-
-            ds.Tables[0].Columns.Add("Balance");
-
-            int balance = 0;
-
-            foreach (DataRow row in ds.Tables[0].Rows)
+            //Report for all students
+            if (rbtnAllStudents.Checked)
             {
-                balance -= int.Parse(row["Penalty"].ToString());
-                row["Balance"] = balance;
+                adap = new SqlDataAdapter();
+                ds = new DataSet();
+
+                sql = $"SELECT s.StudentNum, s.[Name], s.[Surname], ISNULL(0 - SUM(v.[Penalty]), 0) Balance FROM[StudentTable] S LEFT JOIN[ViolationLogTable] vl   ON s.StudentNum = vl.StudentNumber  LEFT JOIN[ViolationTable] v  ON vl.ViolationType = v.Ref GROUP BY s.StudentNum, s.[Name], s.[Surname]";
+                comm = new SqlCommand(sql, conn);
+
+                //Filling the dataset
+                adap.SelectCommand = comm;
+                adap.Fill(ds, "Table");
+
+                //Adding data in to data grid
+                dataGridView.DataSource = ds;
+                dataGridView.DataMember = "Table";
             }
+            else 
+            {
+                //Report for slected students
+                adap = new SqlDataAdapter();
+                ds = new DataSet();
 
-            //Adding data in to data grid
-            dataGridView.DataSource = ds;
-            dataGridView.DataMember = "Table";
+                sql = $"SELECT s.StudentNum, s.[Name], s.[Surname], vl.[DateOfViolation], v.[Description], v.[Penalty] FROM[ViolationLogTable] vl INNER JOIN[StudentTable] s ON vl.StudentNumber = s.StudentNum INNER JOIN[ViolationTable] v ON vl.ViolationType = v.Ref WHERE s.StudentNum = { cmbStudent.SelectedValue.ToString() } ";
+                comm = new SqlCommand(sql, conn);
 
+                //Filling the dataset
+                adap.SelectCommand = comm;
+                adap.Fill(ds, "Table");
+
+                //Add balance table
+                ds.Tables[0].Columns.Add("Balance");
+
+                int balance = 0;
+
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    balance -= int.Parse(row["Penalty"].ToString());
+                    row["Balance"] = balance;
+                }
+
+                //Adding data in to data grid
+                dataGridView.DataSource = ds;
+                dataGridView.DataMember = "Table";
+            }
             //Closing conection to database
             conn.Close();
         }
@@ -144,5 +165,6 @@ namespace Private_Schooling_Information_System
             frmactions.Show();
             this.Close();
         }
+
     }
 }

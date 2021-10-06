@@ -35,21 +35,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rbtnAllStudents = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(38, 191);
+            this.dataGridView.Location = new System.Drawing.Point(13, 427);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(691, 359);
+            this.dataGridView.Size = new System.Drawing.Size(776, 269);
             this.dataGridView.TabIndex = 0;
             // 
             // cmbStudent
             // 
             this.cmbStudent.FormattingEnabled = true;
-            this.cmbStudent.Location = new System.Drawing.Point(162, 64);
+            this.cmbStudent.Location = new System.Drawing.Point(311, 315);
             this.cmbStudent.Name = "cmbStudent";
             this.cmbStudent.Size = new System.Drawing.Size(245, 21);
             this.cmbStudent.TabIndex = 23;
@@ -57,7 +61,8 @@
             // cmbGrade
             // 
             this.cmbGrade.FormattingEnabled = true;
-            this.cmbGrade.Location = new System.Drawing.Point(162, 31);
+            this.cmbGrade.Location = new System.Drawing.Point(311, 282);
+            this.cmbGrade.MaxDropDownItems = 12;
             this.cmbGrade.Name = "cmbGrade";
             this.cmbGrade.Size = new System.Drawing.Size(245, 21);
             this.cmbGrade.TabIndex = 22;
@@ -67,7 +72,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(50, 65);
+            this.label2.Location = new System.Drawing.Point(199, 316);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 21;
@@ -77,7 +82,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(50, 32);
+            this.label3.Location = new System.Drawing.Point(199, 283);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 16);
             this.label3.TabIndex = 20;
@@ -85,7 +90,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(53, 126);
+            this.button1.Location = new System.Drawing.Point(26, 367);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 24;
@@ -95,7 +100,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(38, 613);
+            this.btnBack.Location = new System.Drawing.Point(26, 716);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(70, 31);
             this.btnBack.TabIndex = 25;
@@ -103,11 +108,56 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(208, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(392, 65);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Pull a Report";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(308, 132);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(167, 16);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Pull a report for all students";
+            // 
+            // rbtnAllStudents
+            // 
+            this.rbtnAllStudents.AutoSize = true;
+            this.rbtnAllStudents.Location = new System.Drawing.Point(353, 160);
+            this.rbtnAllStudents.Name = "rbtnAllStudents";
+            this.rbtnAllStudents.Size = new System.Drawing.Size(81, 17);
+            this.rbtnAllStudents.TabIndex = 28;
+            this.rbtnAllStudents.TabStop = true;
+            this.rbtnAllStudents.Text = "All Students";
+            this.rbtnAllStudents.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(350, 242);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 16);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Select a student";
+            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 695);
+            this.ClientSize = new System.Drawing.Size(800, 762);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.rbtnAllStudents);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbStudent);
@@ -133,5 +183,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton rbtnAllStudents;
+        private System.Windows.Forms.Label label5;
     }
 }

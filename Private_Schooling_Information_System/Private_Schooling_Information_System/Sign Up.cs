@@ -98,5 +98,13 @@ namespace Private_Schooling_Information_System
                 MessageBox.Show("Passwords do not match");
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            //Cancel Sign Up
+            Welcome1 frmwelcome = new Welcome1();
+            frmwelcome.Show();
+            this.Close();
+        }
     }
 }

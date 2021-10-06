@@ -19,7 +19,6 @@ namespace Private_Schooling_Information_System
         SqlCommand comm;
         DataSet ds;
         SqlDataAdapter adap;
-        DateTime date;
         public Log_Violations()
         {
             InitializeComponent();
@@ -63,9 +62,6 @@ namespace Private_Schooling_Information_System
         {
             // Connecting String to database
             conn = new SqlConnection(constr);
-
-            //date = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
-            monthCalendar1.SelectionStart = monthCalendar1.TodayDate;
 
             PopulateComboBox();
         }
@@ -148,13 +144,15 @@ namespace Private_Schooling_Information_System
             comm.Parameters.AddWithValue("@ViolationType", cmbViolation.SelectedValue);
             comm.ExecuteNonQuery();
 
+            MessageBox.Show("Violation logged!!");
+
             //Close connection to database
             conn.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            //Open Log Violations
+            //Back to action
             Action frmactions = new Action();
             frmactions.Show();
             this.Close();
