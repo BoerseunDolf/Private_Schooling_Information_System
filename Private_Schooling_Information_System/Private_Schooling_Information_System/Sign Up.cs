@@ -90,6 +90,8 @@ namespace Private_Schooling_Information_System
                 MessageBox.Show("You sucessfully signed up, please go to the login page to login");
 
                 //Close window
+                Welcome1 frmwelcome = new Welcome1();
+                frmwelcome.Show();
                 this.Close();
             }
             //Compare passwords if Passwords do not match do not add data to data base show message box
