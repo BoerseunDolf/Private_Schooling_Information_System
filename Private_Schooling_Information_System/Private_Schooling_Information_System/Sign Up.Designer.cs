@@ -101,10 +101,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(101, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 33);
+            this.label1.Size = new System.Drawing.Size(116, 31);
             this.label1.TabIndex = 7;
             this.label1.Text = "Sign Up";
             // 
@@ -271,6 +271,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(338, 583);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label12);

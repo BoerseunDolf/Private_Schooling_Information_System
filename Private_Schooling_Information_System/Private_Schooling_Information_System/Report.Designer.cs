@@ -114,9 +114,9 @@
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(208, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(392, 65);
+            this.label1.Size = new System.Drawing.Size(442, 65);
             this.label1.TabIndex = 26;
-            this.label1.Text = "Pull a Report";
+            this.label1.Text = "Create a Report";
             // 
             // label4
             // 
@@ -153,6 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(800, 762);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.rbtnAllStudents);
@@ -166,7 +167,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView);
             this.Name = "Report";
-            this.Text = "Reort";
+            this.Text = "Report";
             this.Load += new System.EventHandler(this.Report_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);

@@ -38,7 +38,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 55);
+            this.label1.Location = new System.Drawing.Point(49, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 50);
             this.label1.TabIndex = 0;
@@ -78,13 +78,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(302, 283);
             this.Controls.Add(this.btnLearn);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label1);
             this.Name = "Welcome1";
-            this.Text = "Form1";
+            this.Text = "Welcome";
             this.ResumeLayout(false);
             this.PerformLayout();
 
