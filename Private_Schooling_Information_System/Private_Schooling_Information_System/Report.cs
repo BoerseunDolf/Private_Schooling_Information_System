@@ -18,7 +18,7 @@ namespace Private_Schooling_Information_System
     public partial class Report : Form
     {
         // Public variables
-        string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\OneDrive\Documents\User_Info.mdf;Integrated Security=True;Connect Timeout=30";
+        string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\OneDrive\Documents\CMPG223\Private_Schooling_Information_System\Private_Schooling_Information_System\User_Info.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection conn;
         SqlCommand comm;
         DataSet ds;
@@ -176,23 +176,9 @@ namespace Private_Schooling_Information_System
                 //create new xls file                
                 ExcelLibrary.DataSetHelper.CreateWorkbook("MyStudentReport.xls",ds);
 
-                    /*string file = "Report.xls";
-                    Workbook workbook = new Workbook(); 
-                    Worksheet worksheet = new Worksheet("First Sheet"); 
-                    worksheet.Cells[0, 0] = new Cell("Table"); 
-                    worksheet.Cells[0, 2] = new Cell(9999999);
-                    worksheet.Cells[0, 3] = new Cell((decimal)3.45); 
-                    worksheet.Cells[0, 4] = new Cell("Text string");
-                    worksheet.Cells[0, 5] = new Cell("Second string"); 
-                    worksheet.Cells[0, 6] = new Cell(32764.5, "#,##0.00");
-                    worksheet.Cells[0, 7] = new Cell(DateTime.Now, @"YYYY-MM-DD"); 
-                    worksheet.Cells.ColumnWidth[0, 1] = 3000; 
-                    workbook.Worksheets.Add(worksheet); 
-                    workbook.Save(file);*/
+                  MessageBox.Show("Successfully exported to MS Excel");
 
-                    //open xls file
-                    /*Workbook book = Workbook.Load(file); 
-                    Worksheet sheet = book.Worksheets[0];*/
+                  
         }
     }
 }

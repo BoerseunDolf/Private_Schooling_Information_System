@@ -37,5 +37,10 @@ namespace Private_Schooling_Information_System
         {
             MessageBox.Show("You need to sign up if you are a first time user, if you alredy signed up click on the Login button");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

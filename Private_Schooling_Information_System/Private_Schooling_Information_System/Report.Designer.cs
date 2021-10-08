@@ -94,7 +94,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(26, 367);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(106, 23);
             this.button1.TabIndex = 24;
             this.button1.Text = "Get Report";
             this.button1.UseVisualStyleBackColor = true;
@@ -126,9 +126,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(308, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(167, 16);
+            this.label4.Size = new System.Drawing.Size(185, 16);
             this.label4.TabIndex = 27;
-            this.label4.Text = "Pull a report for all students";
+            this.label4.Text = "Create a report for all students";
             // 
             // rbtnAllStudents
             // 
@@ -153,11 +153,11 @@
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(697, 367);
+            this.btnExport.Location = new System.Drawing.Point(666, 367);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(75, 23);
+            this.btnExport.Size = new System.Drawing.Size(106, 23);
             this.btnExport.TabIndex = 30;
-            this.btnExport.Text = "Export";
+            this.btnExport.Text = "Export Report";
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 

@@ -110,9 +110,9 @@
             // 
             // btnAddViolation
             // 
-            this.btnAddViolation.Location = new System.Drawing.Point(342, 322);
+            this.btnAddViolation.Location = new System.Drawing.Point(342, 307);
             this.btnAddViolation.Name = "btnAddViolation";
-            this.btnAddViolation.Size = new System.Drawing.Size(75, 23);
+            this.btnAddViolation.Size = new System.Drawing.Size(70, 31);
             this.btnAddViolation.TabIndex = 4;
             this.btnAddViolation.Text = "Add";
             this.btnAddViolation.UseVisualStyleBackColor = true;
@@ -137,9 +137,9 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(342, 487);
+            this.btnRemove.Location = new System.Drawing.Point(342, 508);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove.Size = new System.Drawing.Size(70, 31);
             this.btnRemove.TabIndex = 6;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -157,7 +157,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(41, 536);
+            this.btnBack.Location = new System.Drawing.Point(41, 508);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(70, 31);
             this.btnBack.TabIndex = 7;

@@ -90,9 +90,9 @@
             // 
             // btnSaveViolation
             // 
-            this.btnSaveViolation.Location = new System.Drawing.Point(328, 446);
+            this.btnSaveViolation.Location = new System.Drawing.Point(380, 442);
             this.btnSaveViolation.Name = "btnSaveViolation";
-            this.btnSaveViolation.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveViolation.Size = new System.Drawing.Size(70, 31);
             this.btnSaveViolation.TabIndex = 17;
             this.btnSaveViolation.Text = "Save";
             this.btnSaveViolation.UseVisualStyleBackColor = true;

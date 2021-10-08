@@ -65,9 +65,9 @@
             // 
             // btnSignUp2
             // 
-            this.btnSignUp2.Location = new System.Drawing.Point(213, 515);
+            this.btnSignUp2.Location = new System.Drawing.Point(218, 527);
             this.btnSignUp2.Name = "btnSignUp2";
-            this.btnSignUp2.Size = new System.Drawing.Size(75, 23);
+            this.btnSignUp2.Size = new System.Drawing.Size(70, 31);
             this.btnSignUp2.TabIndex = 9;
             this.btnSignUp2.Text = "Sign Up";
             this.btnSignUp2.UseVisualStyleBackColor = true;
@@ -259,9 +259,9 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(36, 514);
+            this.btnCancel.Location = new System.Drawing.Point(36, 527);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(70, 31);
             this.btnCancel.TabIndex = 29;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;

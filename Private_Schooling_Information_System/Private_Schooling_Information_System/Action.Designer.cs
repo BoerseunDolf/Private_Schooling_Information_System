@@ -51,7 +51,7 @@
             this.btnPullReport.Name = "btnPullReport";
             this.btnPullReport.Size = new System.Drawing.Size(108, 56);
             this.btnPullReport.TabIndex = 1;
-            this.btnPullReport.Text = "Pull Report";
+            this.btnPullReport.Text = "Create Report";
             this.btnPullReport.UseVisualStyleBackColor = false;
             this.btnPullReport.Click += new System.EventHandler(this.btnPullReport_Click);
             // 

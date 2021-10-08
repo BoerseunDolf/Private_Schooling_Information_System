@@ -14,7 +14,7 @@ namespace Private_Schooling_Information_System
     public partial class Manage_Violations : Form
     {
         // Public variables
-        string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\OneDrive\Documents\User_Info.mdf;Integrated Security=True;Connect Timeout=30";
+        string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\OneDrive\Documents\CMPG223\Private_Schooling_Information_System\Private_Schooling_Information_System\User_Info.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection conn;
         SqlCommand comm;
         DataSet ds;
