@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using ExcelLibrary.CompoundDocumentFormat;
+using ExcelLibrary.SpreadSheet;
+using ExcelLibrary.BinaryDrawingFormat;
+using ExcelLibrary.BinaryFileFormat;
 
 namespace Private_Schooling_Information_System
 {
@@ -166,5 +170,29 @@ namespace Private_Schooling_Information_System
             this.Close();
         }
 
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            
+                //create new xls file                
+                ExcelLibrary.DataSetHelper.CreateWorkbook("MyStudentReport.xls",ds);
+
+                    /*string file = "Report.xls";
+                    Workbook workbook = new Workbook(); 
+                    Worksheet worksheet = new Worksheet("First Sheet"); 
+                    worksheet.Cells[0, 0] = new Cell("Table"); 
+                    worksheet.Cells[0, 2] = new Cell(9999999);
+                    worksheet.Cells[0, 3] = new Cell((decimal)3.45); 
+                    worksheet.Cells[0, 4] = new Cell("Text string");
+                    worksheet.Cells[0, 5] = new Cell("Second string"); 
+                    worksheet.Cells[0, 6] = new Cell(32764.5, "#,##0.00");
+                    worksheet.Cells[0, 7] = new Cell(DateTime.Now, @"YYYY-MM-DD"); 
+                    worksheet.Cells.ColumnWidth[0, 1] = 3000; 
+                    workbook.Worksheets.Add(worksheet); 
+                    workbook.Save(file);*/
+
+                    //open xls file
+                    /*Workbook book = Workbook.Load(file); 
+                    Worksheet sheet = book.Worksheets[0];*/
+        }
     }
 }

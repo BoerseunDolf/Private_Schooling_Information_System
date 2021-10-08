@@ -39,6 +39,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.rbtnAllStudents = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,12 +151,23 @@
             this.label5.TabIndex = 29;
             this.label5.Text = "Select a student";
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(697, 367);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(75, 23);
+            this.btnExport.TabIndex = 30;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(800, 762);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.rbtnAllStudents);
             this.Controls.Add(this.label4);
@@ -188,5 +201,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rbtnAllStudents;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
