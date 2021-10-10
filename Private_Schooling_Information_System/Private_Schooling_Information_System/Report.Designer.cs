@@ -58,7 +58,7 @@
             this.cmbStudent.Location = new System.Drawing.Point(311, 315);
             this.cmbStudent.Name = "cmbStudent";
             this.cmbStudent.Size = new System.Drawing.Size(245, 21);
-            this.cmbStudent.TabIndex = 23;
+            this.cmbStudent.TabIndex = 3;
             // 
             // cmbGrade
             // 
@@ -67,7 +67,7 @@
             this.cmbGrade.MaxDropDownItems = 12;
             this.cmbGrade.Name = "cmbGrade";
             this.cmbGrade.Size = new System.Drawing.Size(245, 21);
-            this.cmbGrade.TabIndex = 22;
+            this.cmbGrade.TabIndex = 2;
             this.cmbGrade.SelectedIndexChanged += new System.EventHandler(this.cmbGrade_SelectedIndexChanged_1);
             // 
             // label2
@@ -95,7 +95,7 @@
             this.button1.Location = new System.Drawing.Point(26, 367);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 23);
-            this.button1.TabIndex = 24;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Get Report";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -105,7 +105,7 @@
             this.btnBack.Location = new System.Drawing.Point(26, 716);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(70, 31);
-            this.btnBack.TabIndex = 25;
+            this.btnBack.TabIndex = 6;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -136,7 +136,7 @@
             this.rbtnAllStudents.Location = new System.Drawing.Point(353, 160);
             this.rbtnAllStudents.Name = "rbtnAllStudents";
             this.rbtnAllStudents.Size = new System.Drawing.Size(81, 17);
-            this.rbtnAllStudents.TabIndex = 28;
+            this.rbtnAllStudents.TabIndex = 1;
             this.rbtnAllStudents.TabStop = true;
             this.rbtnAllStudents.Text = "All Students";
             this.rbtnAllStudents.UseVisualStyleBackColor = true;
@@ -156,7 +156,7 @@
             this.btnExport.Location = new System.Drawing.Point(666, 367);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(106, 23);
-            this.btnExport.TabIndex = 30;
+            this.btnExport.TabIndex = 5;
             this.btnExport.Text = "Export Report";
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);

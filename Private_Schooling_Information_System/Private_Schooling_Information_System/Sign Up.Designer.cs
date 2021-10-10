@@ -76,6 +76,7 @@
             // txtPassword2
             // 
             this.txtPassword2.Location = new System.Drawing.Point(167, 137);
+            this.txtPassword2.MaxLength = 50;
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '*';
             this.txtPassword2.Size = new System.Drawing.Size(121, 20);
@@ -84,6 +85,7 @@
             // txtUserName2
             // 
             this.txtUserName2.Location = new System.Drawing.Point(167, 100);
+            this.txtUserName2.MaxLength = 50;
             this.txtUserName2.Name = "txtUserName2";
             this.txtUserName2.Size = new System.Drawing.Size(121, 20);
             this.txtUserName2.TabIndex = 1;
@@ -121,6 +123,7 @@
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.Location = new System.Drawing.Point(167, 176);
+            this.txtConfirmPassword.MaxLength = 50;
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
             this.txtConfirmPassword.Size = new System.Drawing.Size(121, 20);
@@ -169,6 +172,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(167, 257);
+            this.txtName.MaxLength = 25;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(121, 20);
             this.txtName.TabIndex = 4;
@@ -176,6 +180,7 @@
             // txtSurname
             // 
             this.txtSurname.Location = new System.Drawing.Point(167, 290);
+            this.txtSurname.MaxLength = 25;
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(121, 20);
             this.txtSurname.TabIndex = 5;
@@ -223,6 +228,7 @@
             // txtUniqueNum
             // 
             this.txtUniqueNum.Location = new System.Drawing.Point(167, 461);
+            this.txtUniqueNum.MaxLength = 8;
             this.txtUniqueNum.Name = "txtUniqueNum";
             this.txtUniqueNum.Size = new System.Drawing.Size(121, 20);
             this.txtUniqueNum.TabIndex = 8;
